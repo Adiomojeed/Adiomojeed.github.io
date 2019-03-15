@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(rgba(250,250,250,0.3),rgba(250,250,250,0.3)),url("images/donald-giannatti-671274-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h5{
+    font-family: "Felix Titling";
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    border-bottom: 2px solid white;
+}
+#cet{
+    font-family:'Lucida Calligraphy';
+    color: #00d2d3;
+    font-size: 30px
+}
+#kwasu{
+    font-family: 'Juice ITC'
+}
+#navbarSupportedContent{
+    color: #55E6C1;
+    font-family: 'Baskerville Old Face'
+}
+h4{
+    font-family: "Gloucester MT Extra Condensed";
+    font-weight: bold;
+    color: white;
+}
+#intro p{
+    color: white;
+    font-size: small;
+}
+.eng{
+    color: yellow;
+}
+#form{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+label{
+    color: white;
+}
+.click{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+/**
+#feedback{
+    background-color: #4265ff;
+    color: white;
+    padding: 5px;
+    width: 50%;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-bottom: 0.5px;
+    margin-bottom: 10px;
+}
+ */

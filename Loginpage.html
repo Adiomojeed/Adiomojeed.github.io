@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="loginpage.js"></script>
+    <style>
+        body{background: linear-gradient(rgba(250,250,250,0.1),rgba(250,250,250,0.1)), url("images/prog.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            fill-opacity: .5;
+            z-index: -5;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <img src="images/logo.png" alt="" class="navbar-brand mr-3" width="80px" height="80px">
+    <span class="navbar-text text-light" style="font-family: 'Cooper Black'">Developer's Students' Club <br>Kwara State University</span>
+    <button class="navbar-toggler bg-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse float-right ml-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="php/index.html">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gallery
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Images</a>
+                    <a class="dropdown-item" href="#">Seminars</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Others</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn bg-light my-2 my-sm-0" type="submit" id="button-addon2">
+                        <span class="fas fa-search " style="color: #fd79a8"></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+<div id="Login" class="bg-transparent my-1" style="padding: 70px;">
+    <div style="margin:50px auto; border-radius: 10px; border: 3px solid gray; box-shadow: 3px 3px white, -3px -3px white;" class="bg-light p-5 col-sm-8 col-md-6 col-lg-4 col-10">
+        <span class="badge badge-primary p-2 mb-2">Login</span>
+        <form onsubmit="return validate()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Username</span>
+                </div>
+                <input type="text" id="username" class="form-control shadow text-primary font-italic" onchange="change()" required="required" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <div id="alerts"></div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2">Password</span>
+                </div>
+                <input type="password" id="password" class="form-control shadow text-primary" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                <div id="alerts2"></div>
+            </div>
+            <button type="submit" class="btn btn-primary shadow">Submit</button>
+            <br>
+            <a href="#" style="font-style: italic" class="text-primary text-decoration-none">Forgot Password?</a>
+            <p>Don't Have an account? <a href="#" style="font-style: italic" class="text-primary text-decoration-none">Create an Account</a></p>
+        </form>
+    </div>
+</div>
+<footer class="pl-4 bg-transparent">
+    <p class="text-light font-weight-bold bg-light text-dark pl-3" style="width: 200px; border-radius: 10px">&copy; DSC KWASU 2018</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
