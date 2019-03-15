@@ -2,72 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Developer Students Club, KWASU Chapter</title>
-    <link rel="icon" href="images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Crimson+Text|Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-md bg-white border-bottom">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="logo" width="45" height="45">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active text-primary" href="#">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tracks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Members</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h1 class="display-5">Developer Student Club</h1>
-                <p class="short-intro">
-                    Vae, stella! Albus, placidus humani generiss saepe desiax scutum goiuygjhlh
-                    Domina persuaderes, tanquam fortis caesium. Ferox plasmators ducunt ad mensa.
-                    Vae, stella! Albus, placidus humanigeneriss saepe desiderium de fidelis, velox ionicis tormento.
-                    Nunquam dignus historia. Rector audax scutum est.
-                    Domina persuaderes, tanquam fortis cducunt ad mensa.
-                </p>
-                <div class="border-outline">
-                    <input type="text" placeholder="Email Address">
-                    <button class="button">Join Us</button>
-                </div>
-                <p class="text-muted">We promise we won't spam you</p>
-            </div>
-            <div class="col-12 col-md-6 ma">
-                <img src="images/coder.png" alt="coder">
+<nav class="nav nav-tabs pl-5 mb-2 btn-light py-3 shadow-sm">
+    <h4 class="">Codeleaf Technologies</h4>
+    <a href="mailto:adio.mojeed@gmail.com" class="ml-auto mt-3 mr-md-3 mr-sm-2"><img src="images/gmail.png" alt="" id="image"></a>
+    <a href="#" class="mt-3 mr-md-3 mr-sm-2"><img src="images/twitter.png" alt="" id="image"></a>
+    <a href="instagram.com" class="mt-3 mr-md-3 mr-sm-2"><img src="images/instagram.jpg" alt="" id="image"></a>
+</nav>
+<div class="d-flex justify-content-center mb-2">
+    <img src="images/passport.jpg" alt="" class="shadow-lg" id="passport">
+</div>
+<h5 class="text-center">Adio Mojeed <br><span class="font-weight-normal font-italic">Full Stack Web Developer/programmer</span></h5>
+<div id="text" class="d-flex justify-content-center">
+    <p class="mx-3 yes"><span class="fas fa-user mr-3"></span>#Codeleaf</p>|
+    <p class="mx-3 yes"><span class="fas fa-map-marker-alt mr-3"></span>Ilorin, Nigeria</p>|
+    <p class="mx-3 yes"><span class="fas fa-mobile-alt mr-3"></span>+234 706 739 1684</p>
+</div>
+<div class=container>
+    <div class="row">
+        <div class="col-12">
+            <div class="md-button-group ml-5 mt-3">
+                <button class="btn btn-light btn-lg mr-sm-2 mr-md-3">Overview</button>
+                <button class="btn btn-light btn-lg mr-sm-2 mr-md-3 my-sm-2">Personal Profile</button>
+                <button class="btn btn-light btn-lg mr-sm-2 mr-md-3 my-sm-2" onclick="inner()">Objectives</button>
+                <button class="btn btn-light btn-lg mr-sm-2 mr-md-3 my-sm-2">Strength</button>
+                <button class="btn btn-light btn-lg mr-sm-2 mr-md-3 my-sm-2">Experience and Team</button>
+                <button class="btn btn-light btn-lg mr-sm-2 mr-md-3 my-sm-2">Projects</button>
+                <button class="btn btn-light btn-lg mr-sm-2 my-sm-2">Skills</button>
             </div>
         </div>
     </div>
-</section>
-<!-- call to action section -->
+</div>
+<div class="ml-5 container">
+    <div class="row">
+        <div class="col-12 mt-3 px-5 pt-4">
+            <div id="intro" class="mb-2 shadow-lg pl-5">
+                <span class="mb-3 font-weight-bold">Personal Profiles</span>
+            </div>
+            <div id="intro2" class="shadow-lg pl-5 pt-4">
+                <p class="font-weight-bold">Name: <span class="font-weight-normal ml-auto">Adio Olanrewaju Mojeed</span></p>
+                <p class="font-weight-bold">Age: <span class="font-weight-normal ml-auto">19</span></p>
+                <p class="font-weight-bold">State of Origin: <span class="font-weight-normal ml-auto">Kwara State</span></p>
+                <p class="font-weight-bold">Residiential Address: <span class="font-weight-normal ml-auto">Lagos</span></p>
+                <p class="font-weight-bold">Study: <span class="font-weight-normal ml-auto">Kwara State University</span></p>
+                <p class="font-weight-bold">Email: <span class="font-weight-normal ml-auto">adio.mojeed@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="col-12 mt-3 px-5 pt-4">
+            <div id="intro" class="mb-2 shadow-lg pl-5">
+                <span class="mb-3 font-weight-bold">Objectives</span>
+            </div>
+            <div id="intro2" class="shadow-lg pl-5 pt-4">
+                <p id="anintro"><br>Hi, It's Mojeed here, A full stack web Developer focused on developing complex web projects and startups. Thanks to practice and experience. I produce
+                    responsive webpages, marketing pages, blogs, etc. <br> <a href="javascript:void(0);" id="more" style="color:gray; text-decoration:none;" onclick="read()" class="font-weight-bold">Read More...</a></p>
+            </div>
+        </div>
+        <div class="col-12 mt-3 px-5 pt-4">
+            <div id="intro" class="mb-2 shadow-lg pl-5">
+                <span class="mb-3 font-weight-bold">Strength</span>
+            </div>
+            <div id="intro2" class="shadow-lg pl-5 pt-4">
+                <ul class="mt-3">
+                    <li>Analytical</li>
+                    <li>Time Conscious and immediate delivery</li>
+                    <li>Results Oriented</li>
+                    <li>Ability to think critically</li>
+                    <li>Highly Organized</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 mt-3 px-5 pt-4">
+            <div id="intro" class="mb-2 shadow-lg pl-5">
+                <span class="mb-3 font-weight-bold">Experience and Team</span>
+            </div>
+            <div id="intro2" class="shadow-lg pl-5 pt-4">
+                <ul class="mt-3">
+                    <li>6 months experience</li>
+                    <li>Developers' Students Club (DSC) KWASU</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 mt-3 px-5 pt-4">
+            <div id="intro" class="mb-2 shadow-lg pl-5">
+                <span class="mb-3 font-weight-bold">Projects</span>
+            </div>
+            <div id="intro2" class="shadow-lg pl-5 pt-4">
+                <ul class="mt-3">
+                    <li>DSC PHP webapp</li>
+                    <li>DSC Login Page (Check Page @ <a href="Loginpage.html">DSC Login</a>)</li>
+                    <li>CET Overview Page (Check Page @ <a href="cet.html">CET Overview</a>)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="list-group col-10 mt-5 mb-2 offset-1 px-5 pt-4 shadow-lg">
+            <div class="list-group-item font-weight-bold pl-4">Skills</div>
+            <div class="list-group-item">
+                <button class="btn btn-dark btn-lg mx-1 mt-2">HTML</button>
+                <button class="btn btn-dark btn-lg mx-1 mt-2">CSS</button>
+                <button class="btn btn-dark btn-lg mx-1 mt-2">Bootstrap</button>
+                <button class="btn btn-dark btn-lg mx-1 mt-2">JavaScript</button>
+                <button class="btn btn-dark btn-lg mx-1 mt-2">PHP</button>
+                <button class="btn btn-dark btn-lg mx-1 mt-2">C/C++</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="px-5 pt-1">
+    <p>&trade;Codeleaf Technology 2019</p>
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
