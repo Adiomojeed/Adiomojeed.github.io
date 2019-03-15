@@ -1,1 +1,2 @@
-# adiomojeed.github.io
+# firstgit
+This is my first git repo

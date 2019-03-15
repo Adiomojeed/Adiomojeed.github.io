@@ -4,3 +4,15 @@ function read(){
         "            responsive webpages, marketing pages, blogs, etc. <br> <br>My jobs are qualified, time-efficient and I enjoy solving problems\n" +
         "                I am ready to collaborate with you to produce maximum output.<br><br> My core technologies are Javascript and PHP."
 }
+function inner() {
+    intro=document.getElementById("intro11");
+    intro2=document.getElementById("intro21");
+    intro.innerHTML="Strength"
+    intro2.innerHTML="<ul class=\"mt-3\">\n" +
+        "                <li>Analytical</li>\n" +
+        "                <li>Time Conscious and immediate delivery</li>\n" +
+        "                <li>Results Oriented</li>\n" +
+        "                <li>Ability to think critically</li>\n" +
+        "                <li>Highly Organized</li>\n" +
+        "            </ul>"
+}
