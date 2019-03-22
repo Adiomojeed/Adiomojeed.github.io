@@ -19,6 +19,7 @@ hr{
 }
 body{
     background-color: #86ffbd;
+    height: 50%;
 }
 #text{
     border-bottom: 2px inset #ffb043;
