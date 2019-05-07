@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="cet.css">
+    <link rel="stylesheet" href="css/cet.css">
     <script src="cet.js"></script>
+    <style>
+        body{
+            background: linear-gradient(rgba(250,250,250,0.3),rgba(250,250,250,0.3)),url("images/donald-giannatti-671274-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light pl-5">
-    <img src="images/logo.png" alt="" style="width: 60px; height: 60px">
+    <img src="images/devlogo.png" alt="" style="width: 60px; height: 60px">
     <span class="navbar-text text-primary" id="cet">CET
         <span id="kwasu">KWASU</span>
         <span class="fas fa-search"></span>
@@ -82,32 +89,20 @@
             <input class="btn btn-light text-primary font-weight-bold px-5" type="submit" value="Read More..."></input>
         </div>
         <div class="col-md-3 col-sm-3 mt-5 col-lg-3">
-            <div id="form" class="bg-light">
+            <div id="form" class="bg-light px-3 py-3">
                 <button class="btn btn-light text-light bg-primary px-2 mb-2 font-weight-bold ml-2" type="button">FeedBack Form</button>
-                <form action="#">
+                <form action="#" class="form">
                     <div class="form-group form-inline">
-                        <div class="col-2">
-                            <label for="name" class="text-primary"><span class="fa fa-user"></span></label>
-                        </div>
-                        <div class="col-9 col-md-4">
-                            <input type="text" class="form-control ml-1" placeholder="Name">
-                        </div>
+                        <label for="name" class="text-primary control-label"><span class="fa fa-user"></span></label>
+                        <input type="text" class="form-control ml-1" placeholder="Name">
                     </div>
                     <div class="form-group form-inline">
-                        <div class="col-2">
-                            <label for="email" class="text-primary"><span class="fa fa-envelope"></span></label>
-                        </div>
-                        <div class="col-9">
-                            <input type="email" class="form-control ml-1" placeholder="Email">
-                        </div>
+                        <label for="email" class="text-primary control-label"><span class="fa fa-envelope"></span></label>
+                        <input type="email" class="form-control ml-1" placeholder="Email">
                     </div>
                     <div class="form-group form-inline">
-                        <div class="col-2">
-                            <label for="email" class="text-primary"><span class="fa fa-envelope"></span></label>
-                        </div>
-                        <div class="col-9">
-                            <textarea type="text" class="form-control ml-1" placeholder="Opinion..."></textarea>
-                        </div>
+                        <label for="email" class="text-primary control-label"><span class="fa fa-envelope"></span></label>
+                        <textarea type="text" class="form-control ml-1" placeholder="Opinion..."></textarea>
                     </div>
                     <div class="form-check">
                         <div class="col-md-9 offset-2">

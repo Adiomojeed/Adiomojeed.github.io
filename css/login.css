@@ -1,0 +1,56 @@
+.col-6{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #11144C;
+}
+.log{
+    font-size: 20px;
+    font-weight: bold;
+}
+.label{
+    font-weight: bold;
+    font-size: 14px;
+}
+.logbox{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.check{
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-block{
+    background: #11144C;
+    color: white;
+}
+.btn-block:hover{
+    background: #11144C;
+    color: white;
+    opacity: 0.9;
+}
+a{
+    color: #11144C;
+    font-weight: bold;
+    font-size: 14px;
+}
+.quote{
+    padding: 5px 7px;
+    font-size: 60px;
+    background: white;
+    color: #11144C;
+    border-radius: 10px;
+}
+.color{
+    padding-top: 130px;
+}
+.dev{
+    color: white;
+    font-weight: bold;
+}
+.connect{
+    color: white;
+    letter-spacing: 3px;
+}

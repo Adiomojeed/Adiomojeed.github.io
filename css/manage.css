@@ -1,0 +1,44 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #11144C;
+}
+.sidebar{
+    background: white;
+}
+.container-fluid{
+    background: #11144C;
+}
+.link1{
+    color: white;
+    margin-top: 150px;
+}
+h3{
+    font-weight: 600;
+}
+.link2{
+    background-color: #858AF4;
+    border-radius: 25px;
+    color: white;
+}
+a.contact{
+    color: white;
+    text-decoration: none;
+}
+.navbord{
+    border-radius: 5px;
+}
+.view{
+    border-radius: 5px;
+}
+.edit{
+    background: #11144C;
+    color: white;
+    border-radius: 5px;
+}
+.delete{
+    border: 1px solid red;
+    border-radius: 5px;
+}
+a{
+    color: #11144C;
+}
