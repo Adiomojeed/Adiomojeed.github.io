@@ -1,81 +1,49 @@
-.img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid aquamarine;
+.intro{
+    background-image: url("../images/kendall-ruth-602587-unsplash.jpg");
+    background-size: cover;
+    padding: 200px 0 150px 100px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
 }
-h4{
-    font-family: 'Bree Serif', serif;
-    font-size: 40px;
-    background: linear-gradient(rgba(124,214,57,0.98) 45%, rgba(116,214,172,0.98));
-    color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: inherit;
+.navbar-brand{
+    font-family: 'Sofia', cursive;
+    color: #c56cf0;
 }
-.ccol-lg-3{
-    background: #FCFCFC;
-    display: block;
+.skills{
+    background: rgba(17, 20, 76, 0.07);
 }
-.col-lg-9{
-    background-color: white;
+.media img{
+    width: 120px;
+    height: 120px;
 }
-#image{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.media-body p{
+    color: #4b4b4b;
 }
 .list{
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: ;   
+    color: #574b90;
 }
-.list:hover{
-    border-bottom: 2px solid skyblue;
-    padding-bottom: 8px;
+#contact{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("../images/clement-h-544786-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #2d3436;
+    color: #feca57;
+    font-size: 14px;
 }
-.list a{
-    color: black;
-}
-.list a:hover{
-    text-decoration: none;
-    color: skyblue;
+.con a{
+    color: #feca57;
 }
 @media screen and (max-width: 1023px){
-    .about li{
-        display: inline;
+    .collapse{
+        padding-left: 15px;
     }
-    .about li a{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .mobile ul li{
-        display: inline;
-    }
-    .list{
-    font-size: 16px;
-    font-weight: bold;
-    }
-    .hr{
-        margin: 0px;
-        visibility: hidden;
+    .navbar-brand{
+        font-size: 25px;
     }
 }
 @media screen and (min-width: 1024px){
-    .mobile ul li{
-        margin: 5px 0 5px 0;
-    }
-    .line{
-        visibility: hidden;
-    }
-     .about li{
-        display: inline;
-    }
-    .about li a{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .list{
-    font-size: 16px;
-    font-weight: bold;
+    .navbar-brand{
+        font-size: 35px;
     }
 }
