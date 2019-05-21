@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Sofia" rel="stylesheet">
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
     <h4 class="navbar-brand">Codeleaf Technologies</h4>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars fa-2x mr-3"></span>
+        <span class="fas fa-bars fa-1x mr-3"></span>
     </button>
 
     <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
@@ -32,16 +39,16 @@
         </ul>
     </div>
 </nav>
-<div class="container-fluid intro">
+<div class="container-fluid intro" id="intro" onmouseover="change('')">
     <div class="row">
         <div class="col-12">
-            <h2>Let's Illuminate your business</h2>
-            <h2>with a design for you</h2>
-            <h2>because it's our work</h2>
+            <h4>Let's Illuminate your business</h4>
+            <h4>with a design for you</h4>
+            <h4>because it's our work</h4>
         </div>
     </div>
 </div>
-<div class="container-fluid py-5 px-5">
+<div class="container-fluid py-4 px-lg-5 pic">
     <div class="row">
         <div class="col-sm-8 col-lg-4 my-3 offset-lg-1">
             <div class="media p-2 shadow details">
@@ -71,7 +78,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid my-5 py-5 skills" id="Skills">
+<div class="container-fluid my-5 py-4 skills px-sm-5" id="Skills">
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
             <h3 class="text-center mb-4">Skills</h3>
@@ -107,7 +114,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid py-5" id="portfolio">
+<div class="container-fluid py-4" id="portfolio">
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
             <h3 class="text-center mb-4">Templates</h3>
@@ -115,32 +122,33 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid pb-3">
     <div class="row">
-        <div class="col-12 col-lg-6 px-3">
-            <div class="">
-                <img src="images/111.png" class="img-fluid image">
+        <div class="col-12 col-lg-10 offset-lg-1 px-3">
+            <div class="listing">
+                <img src="images/111.png" class="img-fluid image" id="img">
+                <ul class="list-unstyled d-flex justify-content-center mt-3">
+                    <li class="mx-2"><a href="javascript:void(0)" onclick="change1()">1</a></li>
+                    <li class="mx-2"><a href="javascript:void(0)" onclick="change2()">2</a></li>
+                    <li class="mx-2"><a href="javascript:void(0)" onclick="change3()">3</a></li>
+                    <li class="mx-2"><a href="javascript:void(0)" onclick="change4()">4</a></li>
+                </ul>
             </div>
         </div>
-        <div class="col-12 col-lg-6 mt-sm-2 px-3">
-            <div class="">
-                <img src="images/112.png" class="img-fluid image">
-            </div>
-        </div>
+        
     </div>
 </div>
 <div class="container-fluid my-2 py-5" id="contact">
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
             <h3 class="text-center mb-4">Contact</h3>
-            <p class="text-center" style="border-bottom: 1px dotted #e1b12c; padding-bottom: 10px;">Come, let's talk and discuss about that project of yours</p>
+            <p class="text-center" style="border-bottom: 1px dotted #e1b12c; padding-bottom: 10px;">Come, let's discuss about that project of yours</p>
             <div class="d-flex justify-content-center mobile">
                 <ul class="list-unstyled">
                     <li class="text-center mr-3 con"><span class="fas fa-map-marker-alt mr-3 fa-1x"></span>Kwara State University, Malete, Ilorin, Nigeria</li>
                     <li class="text-center mt-3 con"><span class="fas fa-mobile-alt mr-3"></span>+234 706 739 1684</li>
-                    <li class="text-center mt-3 con"><span class="fab fa-twitter mr-3"></span><a href="twitter.com/adio_mojeed">@adio_mojeed</a></li>
-                    <li class="text-center mt-3 con"><span class="fas fa-envelope mr-3"></span><a href="mailto:adio.mojeed@gmail.com">adio.mojeed@gmail.com</a></li>
-                    <li class="text-center mt-3 con"><span class="fab fa-github mr-3"></span><a href="github.com/Adiomojeed">github.com/Adiomojeed</a></li>
+<li class="text-center font-weight-bold con mt-4"><h3>Follow</h3></>
+                    <li class="text-center mt-4 con"><a href="twitter.com/adio_mojeed"> <span class="fab fa-twitter fa-3x mr-3"></span></a><a href="mailto:adio.mojeed@gmail.com"> <span class="fas fa-envelope fa-3x mr-3"></span></a><a href="github.com/Adiomojeed"> <span class="fab fa-github fa-3x mr-3"></span></a></li>
                 </ul>
             </div>
         </div>
@@ -148,5 +156,6 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/portfolio.js"></script>
 </body>
 </html>

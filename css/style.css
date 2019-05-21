@@ -1,5 +1,5 @@
 .intro{
-    background-image: url("../images/kendall-ruth-602587-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url("../images/kendall-ruth-602587-unsplash.jpg");
     background-size: cover;
     padding: 200px 0 150px 100px;
     color: white;
@@ -34,16 +34,37 @@
 .con a{
     color: #feca57;
 }
-@media screen and (max-width: 1023px){
+.listing ul li a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+@media screen and (max-width: 759px){
     .collapse{
         padding-left: 15px;
     }
     .navbar-brand{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .pic{
+        padding-left: 15px;
+    }
+    body{
+        font-size: 12px;
+    }
+    .intro{
+        padding: 50px 0 50px 20px;
+        font-size: 10px;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 760px){
     .navbar-brand{
         font-size: 35px;
     }
 }
+/**<div class="col-12 col-lg-6 mt-sm-2 px-3">
+            <div class="">
+                <img src="images/112.png" class="img-fluid image">
+            </div>
+        </div>**/
