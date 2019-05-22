@@ -1,9 +1,22 @@
-.intro{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url("../images/kendall-ruth-602587-unsplash.jpg");
+.intro11{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url("../images/clement-h-544786-unsplash.jpg");
     background-size: cover;
     padding: 200px 0 150px 100px;
     color: white;
-    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+.intro21{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url("../images/emma-matthews-973230-unsplash.jpg");
+    background-size: cover;
+    padding: 200px 0 150px 100px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.intro31{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url("../images/rawpixel-256643-unsplash.jpg");
+    background-size: cover;
+    padding: 200px 0 150px 100px;
+    color: white;
     font-family: 'Lato', sans-serif;
 }
 .navbar-brand{
@@ -35,10 +48,21 @@
     color: #feca57;
 }
 .listing ul li a{
-    color: black;
+    color: #4b4b4b;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+}
+.modal-content{
+    
+}
+.modal-footer .close{
+    font-size: 18px;
+}
+.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 @media screen and (max-width: 759px){
     .collapse{
@@ -51,16 +75,43 @@
         padding-left: 15px;
     }
     body{
-        font-size: 12px;
+        font-size: 14px;
     }
-    .intro{
+    .intro11,.intro21,.intro31{
+        line-height: 20px;
         padding: 50px 0 50px 20px;
-        font-size: 10px;
+    }
+    .intro12,.intro22,.intro32{
+        font-size: 20px;
+    }
+    .intro13,.intro23,.intro33{
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: lighter;
+    }
+    .top,.top:hover{
+        position: relative;
+        top: -50px;
+        left: 500px;
+        color: #feca57;
     }
 }
 @media screen and (min-width: 760px){
     .navbar-brand{
         font-size: 35px;
+    }
+    .intro12,.intro22,.intro32{
+        font-size: 40px;
+    }
+    .intro11,.intro21,.intro31{
+        line-height: 45px;
+    }
+    .intro13,.intro23,.intro33{
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .top{
+        display: none;
     }
 }
 /**<div class="col-12 col-lg-6 mt-sm-2 px-3">

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Sofia" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/portfolio.js"></script>
     <script type="text/javascript">
 	$(document).ready(function(){
 		$("#myModal").modal('show');
@@ -16,8 +19,33 @@
 </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
-    <h4 class="navbar-brand">Codeleaf Technologies</h4>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Welcome to my page</h4>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center">
+                    <img src="images/mojeed.jpeg" class="img">
+                </div>
+                <h5 class="text-center">Adio Olanrewaju Mojeed <br></h5>
+                <div class="d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li class="text-center mr-3"><span class="fas fa-user mr-3"></span>Codeleaf</li>
+                        <li class="text-center mr-3"><span class="fas fa-map-marker-alt mr-3"></span>Ilorin, Nigeria</li>
+                        <li class="text-center"><span class="fas fa-mobile-alt mr-3"></span>+234 706 739 1684</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-light" id="top">
+    <h1 class="navbar-brand">Codeleaf Technologies</h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fas fa-bars fa-1x mr-3"></span>
     </button>
@@ -39,12 +67,46 @@
         </ul>
     </div>
 </nav>
-<div class="container-fluid intro" id="intro" onmouseover="change('')">
-    <div class="row">
-        <div class="col-12">
-            <h4>Let's Illuminate your business</h4>
-            <h4>with a design for you</h4>
-            <h4>because it's our work</h4>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container-fluid intro11" id="intro">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro12">
+                            <span>We design, code, develop</span><br>
+                            <span>And optimise website</span>
+                        </div>
+                        <p class="intro13">This is a hobby turned profession, professionalism at its peak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container-fluid intro21" id="intro">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro22">
+                            <span>Skilled Personnnel with</span><br>
+                            <span>Powereful TOOL and Frameworks</span>
+                        </div>
+                        <p class="intro23">We have trained developers in relevant fields for maximum output</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container-fluid intro31" id="intro">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="intro32">
+                            <span>Best Design that you want</span><br>
+                            <span>And can  trust</span>
+                        </div>
+                        <p class="intro33">Showcase your business service and generate optimum traffic</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -78,7 +140,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid my-5 py-4 skills px-sm-5" id="Skills">
+<div class="container-fluid my-1 my-lg-5 py-4 skills px-sm-5" id="Skills">
     <div class="row">
         <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
             <h3 class="text-center mb-4">Skills</h3>
@@ -131,7 +193,6 @@
                     <li class="mx-2"><a href="javascript:void(0)" onclick="change1()">1</a></li>
                     <li class="mx-2"><a href="javascript:void(0)" onclick="change2()">2</a></li>
                     <li class="mx-2"><a href="javascript:void(0)" onclick="change3()">3</a></li>
-                    <li class="mx-2"><a href="javascript:void(0)" onclick="change4()">4</a></li>
                 </ul>
             </div>
         </div>
@@ -145,17 +206,13 @@
             <p class="text-center" style="border-bottom: 1px dotted #e1b12c; padding-bottom: 10px;">Come, let's discuss about that project of yours</p>
             <div class="d-flex justify-content-center mobile">
                 <ul class="list-unstyled">
-                    <li class="text-center mr-3 con"><span class="fas fa-map-marker-alt mr-3 fa-1x"></span>Kwara State University, Malete, Ilorin, Nigeria</li>
-                    <li class="text-center mt-3 con"><span class="fas fa-mobile-alt mr-3"></span>+234 706 739 1684</li>
-<li class="text-center font-weight-bold con mt-4"><h3>Follow</h3></>
-                    <li class="text-center mt-4 con"><a href="twitter.com/adio_mojeed"> <span class="fab fa-twitter fa-3x mr-3"></span></a><a href="mailto:adio.mojeed@gmail.com"> <span class="fas fa-envelope fa-3x mr-3"></span></a><a href="github.com/Adiomojeed"> <span class="fab fa-github fa-3x mr-3"></span></a></li>
+                    <li class="text-center font-weight-bold con mt-4"><h3>Follow</h3></li>
+                    <li class="text-center mt-4 con"><a href="http://twitter.com/adio_mojeed"> <span class="fab fa-twitter fa-3x mr-3"></span></a><a href="http://mailto:adio.mojeed@gmail.com"> <span class="fas fa-envelope fa-3x mr-3"></span></a><a href="http://github.com/Adiomojeed"> <span class="fab fa-github fa-3x mr-3"></span></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/portfolio.js"></script>
+<a href="#top" class="top"><span class="fas fa-arrow-circle-up fa-2x mr-3"></span></a>
 </body>
 </html>
