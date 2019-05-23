@@ -64,6 +64,15 @@
     height: 150px;
     border-radius: 50%;
 }
+.exp{
+    background-color: aquamarine;
+}
+.expbg{
+    background-color: white;
+}
+.expbg p{
+    color: mediumaquamarine;
+}
 @media screen and (max-width: 759px){
     .collapse{
         padding-left: 15px;
