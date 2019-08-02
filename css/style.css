@@ -177,7 +177,7 @@
     .room .head {
         font-weight: 200;
         font-size: 18px;
-        line-height: 10px;
+        line-height: 20px;
     }
     .about .sub,
     .room .sub {
@@ -185,7 +185,11 @@
         line-height: 20px;
     }
     .hosp1 {
-        height: 150px;
+        height: 250px;
+    }
+    .hosp-icon {
+        color: #ffffff;
+        font-size: 18px;
     }
 }
 
