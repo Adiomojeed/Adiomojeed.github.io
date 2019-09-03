@@ -1,0 +1,184 @@
+﻿<html>
+
+<head>
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            width: 90%;
+            font-size: 16px;
+            margin: 0 auto;
+            color: #2d3436;
+            font-size: 20px
+        }
+        
+        .name {
+            font-size: 44px;
+            font-weight: bolder;
+            line-height: 0;
+        }
+        
+        .name-red {
+            color: #d63031
+        }
+        
+        .post {
+            line-height: 0;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        hr.two {
+            border: 2px solid #2d3436;
+        }
+        
+        .address {
+            text-align: center;
+        }
+        
+        .floatl {
+            float: left;
+            width: 70%;
+        }
+        
+        .floatr {
+            float: left;
+            clear: right;
+            width: 30%;
+            text-align: right;
+            font-style: italic;
+        }
+        
+        .float {
+            clear: both;
+        }
+        
+        .contact {
+            width: 50%;
+            margin: 10px auto;
+            border: 1px solid #2d3436;
+        }
+        
+        .contact-head {
+            text-align: center;
+            background-color: #434343;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .contact-body {
+            padding: 20px
+        }
+        
+        .inputs {
+            display: block;
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #4b94a8;
+        }
+        
+        .inputs:focus {
+            box-shadow: 1px 1px 15px #4b94a8;
+        }
+        
+        .submit {
+            background-color: #4b94a8;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        
+        .error {
+            display: none;
+            color: #bb3833;
+            font-size: 14px;
+        }
+        
+        @media screen and (max-width: 560px) {
+            .name {
+                font-size: 30px;
+            }
+            .post {
+                font-size: 18px;
+                line-height: 5px;
+            }
+            .contact {
+                width: 95%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <div>
+        <!--<img src='https://res.cloudinary.com/codeleaf/image/upload/v1554380594/IMG_20171226_144620.jpg' alt='My Passport' width='150px' height='150px' />-->
+        <p class="name">Adio Olanrewaju <span class="name-red">Mojeed</span></p>
+        <p class="post">Front End Developer</p>
+        <hr class="two">
+        <p class="address">13, Falade Layout, Orimerunmu, Ogun State. | (+234)70-6739-1684 | <a href="mailto:adio.mojeed@gmail.com">adio.mojeed@gmail.com</a></p>
+        <hr class="two">
+    </div>
+    <h3><b>Skills</b></h3>
+    <hr>
+    <p>I am a Front End Developer using the basic HTML, CSS and JavaScript as my tool. I also use the CSS Bootstrap and React.JS Frameworks</p>
+    <hr class="two">
+    <h3><b>Experience</b></h3>
+    <hr>
+    <div>
+        <h4 class="floatl"><b>Developer Students' Club</b> - <i>Front End Developer</i></h4>
+        <p class="floatr">January 2019 - Present</p>
+    </div>
+    <div class="float">
+        <ul>
+            <li>Learnt the basics of Web Development</li>
+            <li>Worked in my team to implement some projects</li>
+        </ul>
+    </div>
+    <h4 class="floatl"><b>HNG Internship</b> - <i>Intern</i></h4>
+    <p class="floatr">April 2019 - May 2019</p>
+    <div class="float">
+        <ul>
+            <li>Joined the internship to build myself as a remote developer</li>
+            <li>Worked with some team members to accomplish some tasks</li>
+        </ul>
+    </div>
+    <hr class="two">
+    <h3><b>Education</b></h3>
+    <hr>
+    <h4 class="floatl"><b>Kwara State University</b> - <i>B.Engr (in view)</i></h4>
+    <p class="floatr">Sept 2017 - May 2022</p>
+
+    <p class="float">Currently studying Electrical and Computer Engineering in the college</p>
+    <div class="contact">
+        <div class="contact-head">Contact Form</div>
+        <div class="contact-body">
+            <input type="text" placeholder="Name" id="name" class="inputs" onblur="checkContent('name', 'error', 4, 'Name', 'four')" required>
+            <span id="error" class="error"></span>
+            <input type="email" placeholder="Email-Address" id="email" class="inputs" required>
+            <textarea name="message" id="message" cols="30" rows="10" class="inputs" onblur="checkContent('message', 'error2', 20, 'Message', 'twenty')" required></textarea>
+            <span id="error2" class="error"></span>
+
+        </div>
+    </div>
+</body>
+<script>
+    function checkContent(a, b, c, d, e) {
+        var name = document.getElementById(a);
+        var error = document.getElementById(b);
+        if (name.value.length < c) {
+
+            error.innerHTML = d + ' characters must be greater than ' + e;
+            error.style.display = 'block';
+            error.style.color = 'red';
+        } else {
+            error.innerHTML = 'successful';
+            error.style.color = 'green';
+        }
+    }
+</script>
+
+</html>
