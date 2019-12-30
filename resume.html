@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 
 <head>
     <title>Resume</title>
@@ -156,12 +156,14 @@
     <div class="contact">
         <div class="contact-head">Contact Form</div>
         <div class="contact-body">
-            <input type="text" placeholder="Name" id="name" class="inputs" onblur="checkContent('name', 'error', 4, 'Name', 'four')" required>
-            <span id="error" class="error"></span>
-            <input type="email" placeholder="Email-Address" id="email" class="inputs" required>
-            <textarea name="message" id="message" cols="30" rows="10" class="inputs" onblur="checkContent('message', 'error2', 20, 'Message', 'twenty')" required></textarea>
-            <span id="error2" class="error"></span>
-
+            <form action="">
+                <input type="text" placeholder="Name" id="name" class="inputs" onblur="checkContent('name', 'error', 4, 'Name', 'four')" required>
+                <span id="error" class="error"></span>
+                <input type="email" placeholder="Email-Address" id="email" class="inputs" required />
+                <textarea name="message" id="message" cols="30" rows="10" class="inputs" onblur="checkContent('message', 'error2', 20, 'Message', 'twenty')" required></textarea>
+                <span id="error2" class="error"></span>
+                <input type="submit" value="SUBMIT" class="inputs submit" />
+            </form>
         </div>
     </div>
 </body>
