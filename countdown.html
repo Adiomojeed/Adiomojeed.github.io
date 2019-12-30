@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Resumption Deadline</title>
+    <style>
+        body {
+            background-color: #34e7e4;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .bg-1 {
+            background-color: #130f40;
+            border-radius: 10%;
+            border-bottom-left-radius: 20% 70%;
+        }
+        
+        .days {
+            background-color: #0be881;
+        }
+        
+        .hours {
+            background-color: #fdcb6e;
+        }
+        
+        .minutes {
+            background-color: #fd79a8;
+        }
+        
+        .seconds {
+            background-color: #26de81;
+        }
+        
+        .hero-color {
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .text-color {
+            border-radius: 0 0 20px 20px;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .hero {
+            color: #2816c4;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body class="pt-5">
+    <h1 class="text-center hero font-weight-bold">countdown to kwasu Resumption</h1>
+    <div class="container-fluid pt-5 text-white">
+        <div class="row">
+            <div class="col-md-2 col-8 mt-3 offset-2 px-4">
+                <div class="days hero-color shadow pl-3 py-1">
+                    <h6 class="p-1">Days</h6>
+                </div>
+                <div class="days text-color mt-1 shadow py-4">
+                    <h1 class="text-center font-weight-bold" id='days'></h1>
+                </div>
+            </div>
+            <div class="col-md-2 col-8 mt-3 offset-2 offset-md-0 px-4">
+                <div class="hours hero-color shadow pl-3 py-1">
+                    <h6 class="p-1">Hours</h6>
+                </div>
+                <div class="hours text-color mt-1 shadow py-4">
+                    <h1 class="text-center font-weight-bold" id='hours'></h1>
+                </div>
+            </div>
+            <div class="col-md-2 col-8 mt-3 offset-2 offset-md-0 px-4">
+                <div class="minutes hero-color shadow pl-3 py-1">
+                    <h6 class="p-1">Minutes</h6>
+                </div>
+                <div class="minutes text-color mt-1 shadow py-4">
+                    <h1 class="text-center font-weight-bold" id='minutes'></h1>
+                </div>
+            </div>
+            <div class="col-md-2 col-8 my-3 offset-2 offset-md-0 px-4">
+                <div class="seconds hero-color shadow pl-3 py-1">
+                    <h6 class="p-1">Seconds</h6>
+                </div>
+                <div class="seconds text-color mt-1 shadow py-4">
+                    <h1 class="text-center font-weight-bold" id='seconds'></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var deadline = new Date("jan 6, 2020 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var presentTime = deadline - now;
+            var days = Math.floor(presentTime / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((presentTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((presentTime % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((presentTime % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML = (days < 10) ? `0${days}` : days;
+            document.getElementById("hours").innerHTML = (hours < 10) ? `0${hours}` : hours;
+            document.getElementById("minutes").innerHTML = (minutes < 10) ? `0${minutes}` : minutes;
+            document.getElementById("seconds").innerHTML = (seconds < 10) ? `0${seconds}` : seconds;
+            if (t < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "TIME UP";
+                document.getElementById("days").innerHTML = '0';
+                document.getElementById("hours").innerHTML = '0';
+                document.getElementById("minutes").innerHTML = '0';
+                document.getElementById("seconds").innerHTML = '0';
+            }
+        }, 1000);
+    </script>
+    <script src="./jquery.min.js"></script>
+</body>
+
+</html>
